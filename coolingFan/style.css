@@ -1,0 +1,40 @@
+.image {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    padding        : 50px;
+}
+
+.image .control {
+    margin-top: 100px;
+
+}
+
+
+.image .image-src {
+    width                    : auto;
+    height                   : 50vh;
+    margin                   : 0 auto;
+    animation-name           : circle;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.one,
+.two,
+.three {
+    animation-name           : circle;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
